@@ -1,0 +1,26 @@
+<div class="homing">
+<%- include("partials/header"); -%>
+
+
+ <div class="homejs">
+   <h1>Home</h1>
+   <p><%= hstcnt %></p>
+
+   <%for(var i=0 ;i<post.length; i++){%>
+     <h1><%=(post[i].title)%></h1>
+     <p><%= (post[i].body).substr(0,100)+"...."%><a href="/posts/<%= (post[i].title)%>">Read more</a></p>
+
+
+
+
+
+   <%}%>
+ </div>
+
+
+
+
+
+
+</div>
+<%- include("partials/footer"); -%>
